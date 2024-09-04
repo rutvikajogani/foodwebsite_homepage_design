@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.header_main {
+    width: 100vw;
+    height: 10vh;
+    z-index: 999;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    z-index: 100000;
+}
+
+.header_main h1 {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.menu_list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    text-transform: uppercase;
+
+}
+
+.menu_list li:hover {
+    color: orange;
+}
+
+.menu_list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon_list_menu {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.icon_list_menu i:hover {
+    color: orange;
+}
+
+.icon_list_menu button {
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.icon_list_menu button:hover {
+    background-color: rgb(235, 141, 0);
+}
+
+.main_img_section {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top: -10vh;
+}
+
+.main_img_section img {
+    height: 100%;
+    width: 100%;
+}
+
+.main_img_section div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+    gap: 40px;
+    width: 39vw;
+}
+
+.main_img_section h1 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 30px;
+}
+
+.main_img_section button {
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.main_img_section button:hover {
+    background-color: rgb(235, 141, 0);
+}
+
+.quick_order {
+    width: 100vw;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.cart {
+    width: 35%;
+    height: 180px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    color: white;
+    border-radius: 10px;
+}
+
+.order_image {
+    height: 120px;
+    width: 120px;
+    border: 3px solid orange;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.order_image img {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.order_info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.order_info button {
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.order_info button:hover {
+    background-color: rgb(235, 141, 0);
+}
+
+.cart:hover .order_image img {
+    transform: scale(1.2);
+}
+
+.menu {
+    font-style: oblique;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu h1::first-letter {
+    font-size: 70px;
+}
+
+.category {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    font-size: 23px;
+    height: 100px;
+    align-items: center;
+}
+
+.main_box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 200px;
+
+}
+
+.box_1 {
+    height: 376px;
+    width: 300px;
+    background: linear-gradient(to bottom, #f1f2f3 40px, #222831 40px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box_1:hover .f1 img {
+    transform: scale(1.1);
+}
+
+.f1 {
+    height: 190px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f2f3;
+    border-radius: 0px 0px 0 20px;
+
+}
+
+.f1 img {
+    height: 140px;
+    width: 140px;
+    transition: 0.3s;
+}
+
+.box_1_info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    padding: 20px;
+}
+
+.prize {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.view_more {
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: white;
+    width: 150px;
+    border-radius: 50px;
+    padding: 10px 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-top: -20px;
+}
+
+.view_more:hover {
+    background-color: rgb(235, 141, 0);
+}
+
+.middle_page {
+    height: 100vh;
+    width: 100vw;
+    background-color: #222831;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.middle_page div {
+    color: white;
+}
+
+.middle_page_write {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+    justify-content: center;
+    font-style: italic;
+}
+
+.middle_page h1 {
+    font-size: 35px;
+}
+
+.middle_page button {
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: white;
+    width: 150px;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.middle_page button:hover {
+    background-color: rgb(235, 141, 0);
+}
+
+.middle_page a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.detail {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.booking_detail {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.detail button {
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: white;
+    width: 150px;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.detail button:hover {
+    background-color: rgb(235, 141, 0);
+}
+
+.detail h1 {
+    font-size: 40px;
+    font-style: italic;
+}
+
+.input {
+    height: 40px;
+    width: 40vw;
+}
+.map{
+    margin-top: 50px;
+    border-radius: 30px;
+    border: 1px solid black;
+}
+
+.last_page h1 {
+    display: flex;
+    justify-content: center;
+    margin: 45px;
+    margin-top: 80px;
+    font-size: 35px;
+    font-style: italic;
+}
+
+.last_page{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.review {
+    height: 25vh;
+    width: 40vw;
+    border: 1px solid #222831;
+    background-color: #222831;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.main_review {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.review_img {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.client img {
+    border-radius: 50%;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    }
+    
+    .client {
+        border: 4px solid #ffbe33;
+        position: relative;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+}
+
+.border {
+    height: 100px;
+    width: 100px;
+    background-color: #ffbe33;
+    position: absolute;
+    transform: translate(-50%, 0) rotate(45deg);
+    top: 0;
+    left: 50%;
+}
+
+.last_button {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.button1 {
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: white;
+    height: 45px;
+    border-radius: 60%;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.button1:hover {
+    background-color: rgb(235, 141, 0);
+}
+
+.button2 {
+    border: none;
+    outline: none;
+    background-color: orange;
+    color: white;
+    height: 45px;
+    border-radius: 60%;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+.button2:hover {
+    background-color: rgb(235, 141, 0);
+}
+
+.footer_1 {
+    margin-top: 100px;
+    width: 100vw;
+    height: 70vh;
+    background-color: #222831;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 130px;
+}
+
+.first_option {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.feane {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    gap: 15px;
+}
+
+.opening {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+}
+
+.second_option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
